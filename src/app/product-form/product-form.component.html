@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="code">Código</label>
+    <input type="text" id="code" [(ngModel)]="product.code" name="code" required>
+  </div>
+  <div>
+    <label for="description">Descrição</label>
+    <input type="text" id="description" [(ngModel)]="product.description" name="description" required>
+  </div>
+  <div>
+    <label for="department">Departamento</label>
+    <select id="department" [(ngModel)]="product.department" name="department">
+      <option *ngFor="let dept of departments" [value]="dept.code">{{ dept.description }}</option>
+    </select>
+  </div>
+  <div>
+    <label for="price">Preço</label>
+    <input type="number" id="price" [(ngModel)]="product.price" name="price" required>
+  </div>
+  <div>
+    <label for="status">Status</label>
+    <input type="checkbox" id="status" [(ngModel)]="product.status" name="status">
+  </div>
+  <button type="submit" class="button-green">Salvar</button>
+  <button type="button" (click)="clearForm()" class="button-yellow">Limpar</button>
+</form>

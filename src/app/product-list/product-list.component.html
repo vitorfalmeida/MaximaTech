@@ -1,0 +1,25 @@
+<table>
+  <thead>
+  <tr>
+    <th>Código</th>
+    <th>Descrição</th>
+    <th>Departamento</th>
+    <th>Preço</th>
+    <th>Status</th>
+    <th>Ações</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products">
+    <td>{{ product.code }}</td>
+    <td>{{ product.description }}</td>
+    <td>{{ product.department }}</td>
+    <td>{{ product.price }}</td>
+    <td>{{ product.status ? 'Ativo' : 'Inativo' }}</td>
+    <td>
+      <button (click)="editProduct(product)" class="button-blue">Editar</button>
+      <button (click)="deleteProduct(product.id)" class="button-red">Excluir</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

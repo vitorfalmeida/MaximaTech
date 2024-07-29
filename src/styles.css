@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: lightgray;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.button-green {
+  background-color: green;
+}
+
+.button-yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.button-red {
+  background-color: red;
+}
+
+.button-blue {
+  background-color: blue;
+}
