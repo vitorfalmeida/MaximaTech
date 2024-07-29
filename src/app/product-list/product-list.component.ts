@@ -23,8 +23,7 @@ export class ProductListComponent implements OnInit {
   }
 
   editProduct(product: Product): void {
-    // A lógica de edição deve ser implementada de maneira que o formulário de edição receba os dados necessários.
-    // Pode ser feita através de um serviço compartilhado ou com um Output Event Emitter.
+    // Implementar lógica de edição
   }
 
   deleteProduct(id: string): void {

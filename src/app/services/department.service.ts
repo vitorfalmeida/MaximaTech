@@ -7,7 +7,7 @@ import { Department } from '../models/department.model';
   providedIn: 'root'
 })
 export class DepartmentService {
-  private apiUrl = 'https://localhost:7279/api/Department'; // URL da sua API
+  private apiUrl = 'https://localhost:44365/api/Department'; // URL da sua API
 
   constructor(private http: HttpClient) {}
 
